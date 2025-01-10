@@ -25,6 +25,7 @@ app.use('/api/*', async (c, next) => {
     allowHeaders: ['Origin', 'Content-Type', 'Content-Length', 'Accept', 'User-Agent'],
     allowMethods: ['POST']
   });
+  console.log(allowedOrigins)
 
   return corsMiddleware(c, next);
 });
